@@ -16,7 +16,7 @@ while 1:
     Angle=0
     maxFace=()
     count=1
-
+    
     for angle in np.arange(0, 360, 90):
         rotated = imutils.rotate_bound(img, angle)
         gray = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
